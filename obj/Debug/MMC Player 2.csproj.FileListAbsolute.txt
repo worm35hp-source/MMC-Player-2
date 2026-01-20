@@ -1,0 +1,16 @@
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\MMC Player 2.exe
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\MMC Player 2.pdb
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC_Player_2.Form_Main.resources
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC_Player_2.Properties.Resources.resources
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC Player 2.csproj.GenerateResource.Cache
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC Player 2.exe
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC Player 2.pdb
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\mmc.dll
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\mmc.pdb
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\Bass.Net.compact.dll
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\MMC_Resources.dll
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\MMC_Resources.pdb
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\bin\Debug\Bass.Net.compact.xml
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC_Player_2.Form_Audio.resources
+C:\Users\Михаил\Documents\Visual Studio 2008\Projects\MMC Player 2\MMC Player 2\obj\Debug\MMC_Player_2.ImageButton.resources

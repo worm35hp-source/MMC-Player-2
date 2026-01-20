@@ -1,0 +1,374 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CD4B942-90AD-4E17-84A2-58F34C71BCF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMC_Player_2</RootNamespace>
+    <AssemblyName>MMC Player 2</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>MMC_Player_2</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>disk-i-melodiya_2.ico</ApplicationIcon>
+    <StartupObject>MMC_Player_2.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\MMC\</OutputPath>
+    <DefineConstants>WindowsCE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bass.Net.compact, Version=2.4.10.3, Culture=neutral, PublicKeyToken=b7566c273e6ef480, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Files.cs" />
+    <Compile Include="Folders.cs" />
+    <Compile Include="Forms.cs" />
+    <Compile Include="Form_AudioSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AudioSettings.Designer.cs">
+      <DependentUpon>Form_AudioSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AudioSettingsBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AudioSettingsBalance.Designer.cs">
+      <DependentUpon>Form_AudioSettingsBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Dial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Dial.Designer.cs">
+      <DependentUpon>Form_Dial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GeneralSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GeneralSettings.Designer.cs">
+      <DependentUpon>Form_GeneralSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Loading.Designer.cs">
+      <DependentUpon>Form_Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Audio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Audio.Designer.cs">
+      <DependentUpon>Form_Audio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Phone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Phone.Designer.cs">
+      <DependentUpon>Form_Phone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PhoneSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PhoneSettings.Designer.cs">
+      <DependentUpon>Form_PhoneSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Player.Designer.cs">
+      <DependentUpon>Form_Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PlayerPhone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PlayerPhone.Designer.cs">
+      <DependentUpon>Form_PlayerPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Radio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Radio.Designer.cs">
+      <DependentUpon>Form_Radio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RadioSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RadioSettings.Designer.cs">
+      <DependentUpon>Form_RadioSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ScreenSaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ScreenSaver.Designer.cs">
+      <DependentUpon>Form_ScreenSaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Settings.Designer.cs">
+      <DependentUpon>Form_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Volume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Volume.Designer.cs">
+      <DependentUpon>Form_Volume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3v1.cs" />
+    <Compile Include="ID3v2.cs" />
+    <Compile Include="ImageButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageButton.Designer.cs">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Label_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Label_.Designer.cs">
+      <DependentUpon>Label_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+    </Compile>
+    <Compile Include="ProgressTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressTrackBar.designer.cs">
+      <DependentUpon>ProgressTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_AudioSettings.resx">
+      <DependentUpon>Form_AudioSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AudioSettingsBalance.resx">
+      <DependentUpon>Form_AudioSettingsBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Dial.resx">
+      <DependentUpon>Form_Dial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GeneralSettings.resx">
+      <DependentUpon>Form_GeneralSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Loading.resx">
+      <DependentUpon>Form_Loading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Audio.resx">
+      <DependentUpon>Form_Audio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Phone.resx">
+      <DependentUpon>Form_Phone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PhoneSettings.resx">
+      <DependentUpon>Form_PhoneSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Player.resx">
+      <DependentUpon>Form_Player.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PlayerPhone.resx">
+      <DependentUpon>Form_PlayerPhone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Radio.resx">
+      <DependentUpon>Form_Radio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RadioSettings.resx">
+      <DependentUpon>Form_RadioSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ScreenSaver.resx">
+      <DependentUpon>Form_ScreenSaver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Settings.resx">
+      <DependentUpon>Form_Settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Volume.resx">
+      <DependentUpon>Form_Volume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageButton.resx">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Label_.resx">
+      <DependentUpon>Label_.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressTrackBar.resx">
+      <DependentUpon>ProgressTrackBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DisplaySettings.resx">
+      <DependentUpon>Form_DisplaySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackBarAudio.resx">
+      <DependentUpon>TrackBarAudio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackBarAudioSettings.resx">
+      <DependentUpon>TrackBarAudioSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackBarDisplaySettings.resx">
+      <DependentUpon>TrackBarDisplaySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerButton.resx">
+      <DependentUpon>TriggerButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerButton_4state.resx">
+      <DependentUpon>TriggerButton_4state.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TrackBarAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackBarAudio.Designer.cs">
+      <DependentUpon>TrackBarAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackBarAudioSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackBarAudioSettings.designer.cs">
+      <DependentUpon>TrackBarAudioSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackBarDisplaySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackBarDisplaySettings.designer.cs">
+      <DependentUpon>TrackBarDisplaySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TriggerButton.Designer.cs">
+      <DependentUpon>TriggerButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerButton_4state.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TriggerButton_4state.Designer.cs">
+      <DependentUpon>TriggerButton_4state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vars.cs" />
+    <Compile Include="Form_DisplaySettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DisplaySettings.Designer.cs">
+      <DependentUpon>Form_DisplaySettings.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BluetoothDll\BluetoothDll.csproj">
+      <Project>{525EE7AB-3997-41F9-8ECE-BABAE53AD8F7}</Project>
+      <Name>BluetoothDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Can\Can.csproj">
+      <Project>{6999145F-D9D0-4D3D-B36F-68068596A80A}</Project>
+      <Name>Can</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{62753EA0-43DE-4C3C-8213-8EE3AD00080F}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\service\Service.csproj">
+      <Project>{E59E0CF6-166F-410C-84A4-B435F4F61275}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Itelma_Kor_Normal.ttf" />
+    <None Include="Kor_Itema_Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="disk-i-melodiya_2.ico" />
+    <None Include="Loading.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
